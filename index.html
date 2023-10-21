@@ -1,7 +1,16 @@
 <head>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js">
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">
 </head>
 <body>
   Hello World!
   <div class="asset-test">AR feature under development</div>
+  <a-scene embedded arjs>
+    <!-- create your content here. just a box for now -->
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
 </body>
